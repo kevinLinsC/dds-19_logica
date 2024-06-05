@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Calculo IMC</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let peso;
+            let altura;
+
+            peso = window.prompt("Digite seu peso: ");
+            peso = Number(peso);
+
+            altura =  window.prompt("Digite sua altura(em centímetro ): ");
+            altura = Number(altura);
+            altura = altura / 100
+            let imc = peso / (altura * altura);
+
+            imc = imc * 100;
+            imc = Math.round(imc); // A função round do Objeto Math arredonda para numeros inteiros.
+            imc = imc / 100; 
+            /*
+            É necessário aumentar o número como exem: 4,778952 para 477,8952 com o Math.round fica 478 dividindo por 100 fica 4,78. 
+            */
+
+            if(imc <= 18.49)
+            {
+                alert("Abaixo do normal");
+            } else if(imc <= 24.99)
+            {
+                alert("Faixa saudável");
+            } else if(imc <= 30)
+            {
+                alert("Acima do peso");
+            } else if(imc <= 35)
+            {
+                alert("Faixa da obesidade grau 1");
+            } else if(imc <= 40)
+            {
+                alert("Faixa de obesidade grau 2");
+            } else
+            {
+                alert("Faixa de obesidade grau 3")
+            }
+
+            alert("Seu IMC é: " + imc);
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

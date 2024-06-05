@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Consumo</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let kmInicial;
+            let kmFinal;
+            let distancia;
+            let precoGasolina;
+            let autonomiaVeiculo;
+            let quantidadeGasolinaGasta;
+            let precoViagem;
+            
+            kmInicial = window.prompt("Digite o Km inicial:");
+            kmInicial = Number(kmInicial);
+
+            kmFinal = window.prompt("Digite o Km final:");
+            kmFinal = Number(kmFinal);
+
+            distancia = kmFinal - kmInicial;
+
+            precoGasolina = window.prompt("Digite o preço da gasolina:");
+            precoGasolina = Number(precoGasolina);
+
+            autonomiaVeiculo = window.prompt("Digite a autonomia do seu veículo:");
+            autonomiaVeiculo = Number(autonomiaVeiculo);
+
+            quantidadeGasolinaGasta = distancia / autonomiaVeiculo;
+
+            precoViagem = quantidadeGasolinaGasta * precoGasolina
+
+            console.log("A distância percorrida foi:", distancia, "km.");
+            console.log("A quantidade de gasolina gasta foi:", quantidadeGasolinaGasta, "L");
+            console.log("O preço da viagem será de: R$", precoViagem)
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
