@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Atividade 04</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let ano;
+
+            ano = window.prompt("Digite um ano para saber se é bissexto ou não:");
+
+            if(ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0)
+            {
+                alert(`O ano ${ano} é bissexto.`)
+            }
+            else
+            {
+                alert(`O ano ${ano} não é bissexto.`)
+            };
+        </script>
+    </head>
+</html>

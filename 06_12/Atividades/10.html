@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Atividade 10</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let num = [];
+            let maior, menor;
+
+            for(let i = 0; i < 10; i++)
+            {
+                num[i] = window.prompt(`Digite o ${i + 1}° número:`);
+            };
+
+            Number(num)
+            maior = num[0]
+            menor = num[0]
+
+            for(let i = 0; i < 10; i++)
+            {
+                if(num[i] > maior)
+                {
+                    maior = num[i]
+                }
+                
+                if(num[i] < menor)
+                {
+                    menor = num[i]
+                }
+            }
+            alert(`Na sequência: ${num} | o maior número é ${maior} e o menor é ${menor}`);
+        </script>
+    </head>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Atividade 08</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let num = [], numInversa = [];
+            let cont = 0;
+
+            for(let i = 0; i < 5; i++)
+            {
+                num[i] = window.prompt(`Digite o ${i + 1}° número:`);
+            };
+
+            for(let i = 4; i >= 0; i--)
+            {
+                numInversa[cont] = num[i];
+                cont++;
+            };
+            alert(numInversa);
+        </script>
+    </head>
+</html>

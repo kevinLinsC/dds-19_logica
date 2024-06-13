@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Atividade 01</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let notas;
+            let media = 0;
+
+            for(let i = 0; i < 4; i++)
+            {
+                notas = window.prompt(`Digite a ${i + 1}° do aluno:`);
+                notas = Number(notas);
+                media += notas;
+            };
+            
+            media = media / 4;
+            alert(`A média do aluno é: ${media}`);
+
+            if(media >= 7)
+            {
+                alert("O aluno esta aprovado.")
+            }
+            else if(media >= 5 && media < 7)
+            {
+                alert("O aluno esta de recuperação.")
+            }
+            else
+            {
+                alert("O aluno esta reprovado.")
+            }
+            
+        </script>
+    </head>
+</html>

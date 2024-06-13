@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Atividade 02</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let idade;
+            let categoria = "";
+
+            idade = window.prompt("Digite sua idade:");
+
+            if(idade >= 0 && idade <= 12)
+            {
+                categoria = "infantil"
+            }
+            else if(idade >= 13 && idade <= 17)
+            {
+                categoria = "adolescente"
+            }
+            else if(idade >= 18 && idade <= 59)
+            {
+                categoria = "adulto"
+            }
+            else
+            {
+                categoria = "idoso"
+            }
+
+            alert(`Sua categoria é: ${categoria}`)
+        </script>
+    </head>
+</html>
