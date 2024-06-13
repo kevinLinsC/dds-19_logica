@@ -11,22 +11,25 @@
                 num[i] = window.prompt(`Digite o ${i + 1}° número:`);
             };
 
-            Number(num)
-            maior = num[0]
-            menor = num[0]
+            maior = num[0];
+            menor = num[0];
+
+            console.log(num.length);
 
             for(let i = 0; i < 10; i++)
             {
-                if(num[i] > maior)
+                if(Number(num[i]) > maior)
                 {
-                    maior = num[i]
-                }
+                    maior = num[i];
+                    console.log("num: " + num[i] + " maior: " + maior);
+                };
                 
-                if(num[i] < menor)
+                if(Number(num[i]) < menor)
                 {
-                    menor = num[i]
-                }
-            }
+                    menor = num[i];
+                    console.log("num: " + num[i] + " menor: " + maior);
+                };
+            };
             alert(`Na sequência: ${num} | o maior número é ${maior} e o menor é ${menor}`);
         </script>
     </head>
